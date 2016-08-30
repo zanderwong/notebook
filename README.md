@@ -118,13 +118,13 @@ mysql 安装完后可能会用到的语句
 ```powershell
 alter user 'root'@'localhost' identified by '123';
 create database victor;
-create user 'victor'@'localhost' identified by 'victor@123';
+create user 'zander'@'localhost' identified by 'zander@123';
 flush privileges;
-creaet user 'victorremote'@'%' identified by 'victorremote@123';
+creaet user 'zanderremote'@'%' identified by 'zanderremote@123';
 flush privileges;
-grant all on victor.* to 'victor'@'localhost' identified by 'victor@123';
+grant all on zander.* to 'zander'@'localhost' identified by 'zander@123';
 flush privileges;
-grant all on victor.* to 'victorremote'@'%' identified by 'victorremote@123';
+grant all on victor.* to 'zanderremote'@'%' identified by 'zanderemote@123';
 flush privileges;
 
 ################################
