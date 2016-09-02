@@ -149,7 +149,7 @@ set character_set_results=utf8;
 # PHP Install and Configuration
 
 ## Download   
-下载MYSQL 5.7.11 zip 安装包
+下载php-5.6.25-nts-Win32-VC11-x64 zip 安装包
 [download](http://windows.php.net/downloads/releases/php-5.6.25-nts-Win32-VC11-x64.zip)
 
 
@@ -160,7 +160,7 @@ D:\Program Files\PHP
 ## Configuration
 
 ####  create a configuration file for MYSQL
->new一个名为my.ini的MYSQL配置文件   
+> new一个名为my.ini的MYSQL配置文件   
 example: D:\Program Files\PHP\php.ini-development    
 
 temple:
@@ -2158,7 +2158,7 @@ ldap.max_links = -1
 
 ```
 
->主要修改处   
+> 主要修改处   
 指定php存放目录：doc_root = "C:\nginx\html"   
 更改扩展存放目录为真是拓展存放目录：extension_dir = "ext"     
 更改时区：date.timezone = Asia/BeiJing   
@@ -2330,7 +2330,7 @@ http {
 
  echo Starting PHP FastCGI...
 
- RunHiddenConsole F:/php/php-cgi.exe -b 127.0.0.1:9000 -c F:/php/php.ini
+ RunHiddenConsole D:/Program Files/PHP/php-cgi.exe -b 127.0.0.1:9000 -c D:/Program Files/PHP/php.ini
 
  echo Starting nginx...
 
