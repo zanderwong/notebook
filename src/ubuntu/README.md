@@ -201,4 +201,4 @@ gconftool-2 --type Boolean --set /apps/docky-2/Docky/Items/DockyItem/ShowDockyIt
 
 ----
 
-[Back to Summary](README.md)
+[Back to Summary](/README.md)
