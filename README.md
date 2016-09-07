@@ -2323,7 +2323,7 @@ http {
 ```
 
 > 编写启动php-cgi.exe和nginx.ex的批处理程序
-在此目录创建start-php-nginx.bat,内容如下
+在此目录创建nginxRun.bat
 
 ```
  @echo off
@@ -2339,11 +2339,11 @@ http {
  Exit
 ```
 
- 对于上面的内容中的三个路径你可以指定成你自己的实际程序安装路径
+ _对于上述三个路径自选_
 
 
 
- 在此目录创建stop-php-nginx.bat,内容如下
+ > 在此目录创建nginxEnd.bat,内容如下
 ```
  @echo off
 
@@ -2357,3 +2357,38 @@ http {
 
   exit
 ```
+
+在nginx/html/ 中new一个页面来测试php和mysql
+test.php
+```php
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>phpInfo</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+</head>
+
+<body>
+    <h1 style="text-align:center">phpInfo</h1>
+
+    <?php 
+		header("Content-Type:text/html;   charset=gbk"); 
+     	$link = new PDO('mysql:host=localhost','root','');
+     	if($link){
+     		echo '<h2 style="text-align:center">DATABASES CONNECT ESTABLISHED!</h2>';
+
+     	}else{
+     		echo "DATABASES CONNECT FAILED!";
+     	}
+		phpinfo(); 
+	?>
+</body>
+
+</html>
+```
+
+
+![](res/test.png)
