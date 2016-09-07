@@ -13,18 +13,18 @@
 ### system image
 
 | Ubuntu Gnome      |     *Link* |   
-| :-------- | --------:| 
-| standard download|*[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.iso)* | 
+| :-------- | --------:|
+| standard download|*[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.iso)* |
 | BitTorrent download|    *[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.iso.torrent)* |
 |zsync metafile | *[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.iso.zsync)* |
 | file listing | *[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.list)* |
 | contents of live filesystem | *[enter link description here](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.04.1/release/ubuntu-gnome-16.04.1-desktop-amd64.manifest)* |
 
 
-> 
+>
 > #### Other Distribution
 > | Distribution      |     *Link* |   
-| :-------- | --------:| 
+| :-------- | --------:|
 | Ubuntu     |    *[enter link description here](http://releases.ubuntu.com/16.04/ubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
 | Kubuntu   |   *[enter link description here](http://cdimage.ubuntu.com/kubuntu/releases/16.04.1/release/kubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
 | Lubuntu    |   *[enter link description here](http://cdimage.ubuntu.com/lubuntu/releases/16.04.1/release/lubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
@@ -32,12 +32,12 @@
 |Mythbuntu    |   *[enter link description here](http://cdimage.ubuntu.com/mythbuntu/releases/16.04.1/release/mythbuntu-16.04.1-desktop-amd64.iso.torrent)* |  
 | Ubuntu MATE    |   *[enter link description here](http://cdimage.ubuntu.com/ubuntu-mate/releases/16.04.1/release/ubuntu-mate-16.04.1-desktop-amd64.iso.torrent)* |  
 | Ubuntu Studio    |   *[enter link description here](http://cdimage.ubuntu.com/ubuntustudio/releases/16.04.1/release/ubuntustudio-16.04.1-dvd-amd64.iso.torrent)* |  
-		
 
-	
+
+
 ## System Settings
 ### language and input method
-![Alt text](res/drawable/Screenshot from 2016-08-13 01-17-19.PNG)
+![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-17-19.PNG)
 
 
 ### system login configuration
@@ -67,7 +67,8 @@ pulseaudio --start --log-target=syslog     //active audio
 # auth required pam_succeed_if.so user != root quiet
 ```
 ### apt repository configuration
-#### source list edit
+#### source list edit    
+
 ```nginx
 # China Mainland Mirrors
 deb http://mirrors.163.com/ubuntu/ xenial main restricted universe multiverse
@@ -103,9 +104,9 @@ deb http://mirrors.sohu.com/ubuntu/ xenial universe
 deb http://mirrors.sohu.com/ubuntu/ xenial-updates universe
 # deb-src http://us.archive.ubuntu.com/ubuntu/ xenial-updates universe
 
-## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
-## team, and may not be under a free licence. Please satisfy yourself as to 
-## your rights to use the software. Also, please note that software in 
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
 ## multiverse WILL NOT receive any review or updates from the Ubuntu
 ## security team.
 deb http://mirrors.sohu.com/ubuntu/ xenial multiverse
@@ -137,9 +138,11 @@ deb http://mirrors.sohu.com/ubuntu/ xenial-proposed restricted multiverse univer
 # deb-src http://security.ubuntu.com/ubuntu xenial-security multiverse
 
 
-# deb http://ppa.launchpad.net/noobslab/deepin-sc/ubuntu xenial main 
-# deb-src http://ppa.launchpad.net/noobslab/deepin-sc/ubuntu xenial main 
-```
+# deb http://ppa.launchpad.net/noobslab/deepin-sc/ubuntu xenial main
+# deb-src http://ppa.launchpad.net/noobslab/deepin-sc/ubuntu xenial main
+```   
+
+
 #### update
 ```
 apt update
@@ -192,14 +195,5 @@ gconftool-2 --type Boolean --set /apps/docky-2/Docky/Items/DockyItem/ShowDockyIt
 ```
 
 ## Screenshot
-![Alt text](res/drawable//Screenshot from 2016-08-13 01-14-20.png)
-![Alt text](res/drawable//Screenshot from 2016-08-13 01-17-52.png)
-
-
-
-
-
-
-
-
-
+![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-14-20.png)
+![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-17-52.png)
