@@ -2358,7 +2358,9 @@ http {
   exit
 ```
 
-在nginx/html/ 中new一个页面来测试php和mysql
+
+> 在nginx/html/ 中new一个页面来测试php和mysql
+
 test.php
 ```php
 <!DOCTYPE html>
@@ -2391,4 +2393,4 @@ test.php
 ```
 
 
-![Alt text](res/nginx/test.PNG)
+![Alt text](/res/nginx/test.PNG)
