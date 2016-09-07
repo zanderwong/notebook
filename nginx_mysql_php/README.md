@@ -2344,6 +2344,7 @@ http {
 
 
  > 在此目录创建nginxEnd.bat,内容如下
+ 
 ```
  @echo off
 
@@ -2360,6 +2361,7 @@ http {
 
 
 > 在nginx/html/ 中new一个页面来测试php和mysql
+
 
 test.php
 ```php
