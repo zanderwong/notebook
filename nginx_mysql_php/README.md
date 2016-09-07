@@ -1,10 +1,3 @@
-# Summary
-
-* [Preface](README.md)
-* [Nginx MYSQL PHP](nginx_mysql_php/README.md)
-
-nginx_mysql_php
-
 # MYSQL Install and Configuration (winx64)
 
 ## Download   
@@ -2398,4 +2391,4 @@ test.php
 ```
 
 
-![](res/test.png)
+![Alt text](res/nginx/test.PNG)
