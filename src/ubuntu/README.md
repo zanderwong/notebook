@@ -82,7 +82,7 @@ deb-src http://mirrors.163.com/ubuntu/ xenial-updates main restricted universe m
 deb-src http://mirrors.163.com/ubuntu/ xenial-proposed main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ xenial-backports main restricted universe multiverse
 
-# deb cdrom:[Ubuntu-GNOME 16.04 LTS _Xenial Xerus_ - Release amd64 (20160421)]/ xenial main multiverse restricted universe
+
 
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
 # newer versions of the distribution.
