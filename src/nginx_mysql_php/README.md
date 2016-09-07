@@ -2395,4 +2395,10 @@ test.php
 ```
 
 
-![Alt text](/res/nginx/test.PNG)
+![Alt text](/res/nginx/test.PNG)    
+
+
+
+----
+
+[Back to Summary](/README.md)
