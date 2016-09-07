@@ -197,3 +197,8 @@ gconftool-2 --type Boolean --set /apps/docky-2/Docky/Items/DockyItem/ShowDockyIt
 ## Screenshot
 ![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-14-20.png)
 ![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-17-52.png)
+
+
+----
+
+[Back to Summary](README.md)
