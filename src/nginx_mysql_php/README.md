@@ -1056,17 +1056,17 @@ extension=php_mysql.dll
 extension=php_mysqli.dll
 ;extension=php_oci8_12c.dll  ; Use with Oracle Database 12c Instant Client
 ;extension=php_openssl.dll
-;extension=php_pdo_firebird.dll
-;extension=php_pdo_mysql.dll
-;extension=php_pdo_oci.dll
-;extension=php_pdo_odbc.dll
+extension=php_pdo_firebird.dll
+extension=php_pdo_mysql.dll
+extension=php_pdo_oci.dll
+extension=php_pdo_odbc.dll
 extension=php_pdo_pgsql.dll
-;extension=php_pdo_sqlite.dll
+extension=php_pdo_sqlite.dll
 ;extension=php_pgsql.dll
 ;extension=php_shmop.dll
 
-; The MIBS data available in the PHP distribution must be installed.
-; See http://www.php.net/manual/en/snmp.installation.php
+; The MIBS data available in the PHP distribution must be installed. 
+; See http://www.php.net/manual/en/snmp.installation.php 
 ;extension=php_snmp.dll
 
 ;extension=php_soap.dll
@@ -2175,7 +2175,12 @@ cgi.rfc2616_headers = 1
 查找定位至：;extension=php_mysql.dll，去掉前面分号    
 查找定位至：;extension=php_mysqli.dll，去掉前面分号    
 查找定位至：;extension=php_pdo_mysql.dll，去掉前面分号    
-
+查找定位至：;extension=php_pdo_firebird.dll，去掉前面分号   
+查找定位至：;extension=php_pdo_mysql.dll，去掉前面分号   
+查找定位至：;extension=php_pdo_oci.dll，去掉前面分号   
+查找定位至：;extension=php_pdo_odbc.dll，去掉前面分号   
+查找定位至：;extension=php_pdo_pgsql.dll，去掉前面分号   
+查找定位至：;extension=php_pdo_sqlite.dll，去掉前面分号   
 
 # NGINX Install and Configuration
 ## Download   
@@ -2195,7 +2200,6 @@ C:\nginx\
 > 将C:\nginx\nginx.conf文件打开，进行如下修改
 
 ```
-
 #user  nobody;
 worker_processes  1;
 
@@ -2248,7 +2252,7 @@ http {
         #
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {
-            root   html;
+            root   html/nginx;
         }
 
         # proxy the PHP scripts to Apache listening on 127.0.0.1:80
@@ -2266,12 +2270,34 @@ http {
         #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
         #    include        fastcgi_params;
         #}
-        location ~ \.php$ {
-            root        html;
-            fastcgi_pass    127.0.0.1:9000;
-            fastcgi_index   index.php;
-            fastcgi_param   SCRIPT_FILENAME C:/nginx/html$fastcgi_script_name;
-            include     fastcgi_params;
+        # location ~ \.php$ {
+        #     root        html;
+        #     fastcgi_pass    127.0.0.1:9000;
+        #     fastcgi_index   index.php;
+        #     fastcgi_param   SCRIPT_FILENAME C:/nginx/html$fastcgi_script_name;
+        #     include     fastcgi_params;
+        # }
+        location ~ \.php($|/) {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_split_path_info ^(.+\.php)(.*)$;
+            fastcgi_param   PATH_INFO $fastcgi_path_info;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
+                {
+                        expires      30d;
+                }
+
+        location ~ .*\.(js|css)?$
+                {
+                        expires      12h;
+                }
+        if (!-e $request_filename) {
+            rewrite ^/(.*)$ /index.php/$1 last;
+            break;
         }
 
         # deny access to .htaccess files, if Apache's document root
@@ -2319,7 +2345,6 @@ http {
     #}
 
 }
-
 ```
 
 > 编写启动php-cgi.exe和nginx.ex的批处理程序
