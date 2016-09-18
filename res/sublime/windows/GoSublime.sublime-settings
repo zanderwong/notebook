@@ -1,0 +1,6 @@
+{
+    "env": {
+     "GOROOT":"C:\\Go",
+     "GOPATH": "D:\\Programming\\go",
+    }
+}
