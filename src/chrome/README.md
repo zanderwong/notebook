@@ -32,3 +32,8 @@ stable:	https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-48.0a2.en-US.linux-x86_64.tar.bz2
 ####### win64
 https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-49.0a2.en-US.win64.installer.exe
+
+
+----
+
+[Back to Summary](/README.md)

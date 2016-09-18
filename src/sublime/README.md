@@ -21,3 +21,8 @@ set Build System for Sublime
 
 #### buildPath
 $HOME/.config/sublime-text-3/Packages/User/
+
+
+----
+
+[Back to Summary](/README.md)
