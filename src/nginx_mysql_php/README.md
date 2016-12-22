@@ -47,9 +47,9 @@ temple:
 #########################
 # basedir 为安装文件解压后的目录 ｜ basedir和datadir 可以使用相对路径
 # basedir 为根目录
-basedir = D:\\Program Files\\MYSQL
+basedir = C:\\Program Files\\MYSQL
 # datadir 为用来存放数据的目录
-datadir=D:\\Program Files\\MYSQL\\data
+datadir = C:\\Program Files\\MYSQL\\data
 # port 为端口号
 port=3306
 # mar_connections为最大连接数
@@ -71,7 +71,7 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 ##  Initializing the Data Directory
 当然，按照mysql官方文档给出的步骤还有一步 Selecting a MySQL Server Type，就是选择用 mysqld 还是 mysqld-debug ｜命令如下
 ```powershell
-mysqld --defaults-file="D:\Program Files\MYSQL\my.ini" --initialize-insecure
+mysqld --defaults-file="C:\Program Files\MYSQL\my.ini" --initialize-insecure
 ```
 
 
