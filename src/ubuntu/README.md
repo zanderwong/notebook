@@ -158,7 +158,7 @@ apt upgrade
 ```
    
 #### apt proxy
-[terminal的网络代理](/src/ubuntu/ternimal_proxy.md)  
+[terminal的网络代理](/src/ubuntu/terminal_proxy.md)  
 
    
 
