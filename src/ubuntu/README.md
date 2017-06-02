@@ -35,6 +35,8 @@
 
 
 
+   
+
 ## System Settings
 ### language and input method
 ![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-17-19.PNG)
@@ -66,6 +68,9 @@ pulseaudio --start --log-target=syslog     //active audio
 ```nginx
 # auth required pam_succeed_if.so user != root quiet
 ```
+
+   
+
 ### apt repository configuration
 #### source list edit    
 
@@ -154,7 +159,11 @@ apt upgrade
    
 #### apt proxy
 [terminal的网络代理](/src/ubuntu/ternimal_proxy.md)  
-  
+
+   
+
+   
+
     
       
 
@@ -200,6 +209,8 @@ Hide the settings icon
 ```bash
 gconftool-2 --type Boolean --set /apps/docky-2/Docky/Items/DockyItem/ShowDockyItem False
 ```
+
+   
 
 ## Screenshot
 ![Alt text](/res/ubuntu/Screenshot from 2016-08-13 01-14-20.png)
