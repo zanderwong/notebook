@@ -74,10 +74,15 @@ rabbitmqctl set_permissions -p '/' test ".*" ".*" ".*"
 ## Web management 
 
 ```
-rabbitmq-plugins enable rabbitmq-management
+rabbitmq-plugins enable rabbitmq_management
 ```
 
 chrome -> hostname:15672
+
+  
+    
+      
+      
 ----
 
 [Back to Summary](/README.md)
