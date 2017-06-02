@@ -23,8 +23,8 @@
 
 >
 > #### Other Distribution
-> | Distribution      |     *Link* |   
-| :-------- | --------:|
+| Distribution      |     *Link* |   
+| :-------- | --------:|    
 | Ubuntu     |    *[enter link description here](http://releases.ubuntu.com/16.04/ubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
 | Kubuntu   |   *[enter link description here](http://cdimage.ubuntu.com/kubuntu/releases/16.04.1/release/kubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
 | Lubuntu    |   *[enter link description here](http://cdimage.ubuntu.com/lubuntu/releases/16.04.1/release/lubuntu-16.04.1-desktop-amd64.iso.torrent)* |  
@@ -151,6 +151,13 @@ apt update
 ```
 apt upgrade
 ```
+   
+#### apt proxy
+[terminal的网络代理](/src/ubuntu/ternimal_proxy.md)  
+  
+    
+      
+
 ### application install
 ##### java
 ```powershell
